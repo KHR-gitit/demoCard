@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Card</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-image: url("https://images.unsplash.com/photo-1547500135-9f6e5a9a6aff?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1650&q=80");
+            position: relative;
+            height: 100vh;
+
+        }
+        body::after {
+            content: " ";
+            position: absolute;
+            background: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(5px);
+            z-index: 2;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        body > * {
+            position: relative;
+            z-index: 10;
+        }
+        .lightblue {
+            background-color: #e3f2fd;
+        }
+        nav div div {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="d-flex p-3 lightblue">
+        <ul class="navbar-nav flex-row">
+            <li class="nav-item px-2"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item px-2"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item px-2"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="h-75 d-flex justify-content-md-center align-items-center">
+        <div class="container px-5">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+
+    <footer class="w-100 lightblue position-fixed bottom-0 py-3">
+        <h6 class="display m-0 text-center text-success">Made by Khalil With &hearts;</h6>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
